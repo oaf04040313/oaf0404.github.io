@@ -27,6 +27,12 @@ img {
   display: none;
 }
 
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
 /*--------------------------------
  レイアウト
 ---------------------------------*/
@@ -109,6 +115,7 @@ img {
   margin-right: 20px;
 }
 
+
 .gnav-item a {
   position: relative;
   font-size: 13px;
@@ -119,23 +126,137 @@ img {
   letter-spacing: .05em;
   color: #333;
 }
-.gnav-item a:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
-  content: "";
-  transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #333;
+
+.title {
+  opacity: 0;
+  animation-name: fadein-top;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-top {
+  0% {
+     opacity: 0;
+     transform: translateY(-50px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
 }
 
-.gnav-item a:hover:after {
-  width: 100%;
+.works-img-1 {
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+  animation-name: fadedown;
+  animation-duration: 1s;
+  opacity: 0;
+}
+@keyframes fadedown {
+from {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0px);
+}
 }
 
+.works-img-2 {
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(50px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.works-img-3 {
+  animation-delay: 2s;
+  opacity: 0;
+  animation-name: fadeleft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeleft {
+from {
+  opacity: 0;
+   transform: translateX(150px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.works-img-4 {
+  animation-delay: 1s;
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(50px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.works-img-5 {
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-name: fadein-top;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-top {
+  0% {
+     opacity: 0;
+     transform: translateY(-50px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.works-img-6 {
+  animation-delay: 2s;
+  opacity: 0;
+  animation-name: faderight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes faderight {
+from {
+  opacity: 0;
+   transform: translateX(-150px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
@@ -180,6 +301,50 @@ img {
   line-height: 1.8;
   color: #fff;
 }
+
+.mv {
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.mv-title {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: fadeleft;
+  animation-duration: 1s;
+}
+@keyframes fadeleft {
+from {
+  opacity: 0;
+   transform: translateX(150px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.delay-time02{
+  animation-delay: 0.2s;
+  }
+  
+  .delay-time04{
+  animation-delay: 0.4s;
+  }
 
 /*--------------------------------
  Works
@@ -568,4 +733,15 @@ img {
     line-height: 1.7;
     margin-bottom: 20px;
   }
+}
+
+
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+  transition: all 2000ms; /* フェードインにかかる時間を指定 */
+}
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
