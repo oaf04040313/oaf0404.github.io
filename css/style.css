@@ -5,10 +5,11 @@ body {
   color: #333;
 }
 
-a {
+.works-list {
   transition: opacity .3s;
   text-decoration: none;
   color: #1ca9e3;
+  cursor: pointer;
 }
 
 img {
@@ -162,6 +163,204 @@ img {
   }
 }
 
+
+#open-1, #close-1 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+z-index: 1;
+}
+
+#mask-1 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-1 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+#open-2, #close-2 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#mask-2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-2 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+
+#open-3, #close-3 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#mask-3 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-3 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+#open-4, #close-4 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#mask-4 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-4 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+
+#open-5, #close-5 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#mask-5 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-5 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+
+#open-6, #close-6 {
+  cursor: pointer;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#mask-6 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal-6 {
+  background: #fff;
+  max-width: 40%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+z-index: 99;
+}
+
+
+.hidden-1{
+  display: none;
+}
+
+.hidden-2{
+  display: none;
+}
+
+.hidden-3{
+  display: none;
+}
+
+.hidden-4{
+  display: none;
+}
+
+.hidden-5{
+  display: none;
+}
+
+.hidden-6{
+  display: none;
+}
+
 .works-img-1 {
   animation-delay:1s;
   animation-fill-mode: forwards;
@@ -285,8 +484,7 @@ to {
   text-align: center;
   background-image: url(../img/Em3A3QkVgAEKBgw16081846587923.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: 100%;
 }
 
 .mv-container {
@@ -513,6 +711,31 @@ to {
   color: #797979;
 }
 
+
+
+
+#graydisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%!important;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+#graydisplay img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  height: 90%;
+}
+
 /*--------------------------------
  下層：Worksページ
 ---------------------------------*/
@@ -568,6 +791,8 @@ to {
 .home-link {
   text-align: center;
 }
+
+
 
 /*media Queries 767
 ----------------------------------------------------*/
@@ -682,6 +907,23 @@ to {
     width: auto;
     height: auto;
   }
+
+  #mask-5{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* Skill */
   .skill-list {
