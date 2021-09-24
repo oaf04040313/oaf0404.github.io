@@ -93,17 +93,17 @@ img {
   padding: 20px 40px;
 }
 
+.header-logo a {
+  color: #333;
+  font-family: 'Architects Daughter', cursive;
+  text-decoration: none;
+}
+
 .header-logo {
-  font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
   margin-right: 20px;
   letter-spacing: .05em;
-}
-
-.header-logo a {
-  color: #333;
-  font-family: 'Architects Daughter', cursive;
 }
 
 .gnav-list {
@@ -119,13 +119,14 @@ img {
 
 .gnav-item a {
   position: relative;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   display: inline-block;
   padding: 5px 0;
   transition: .3s;
   letter-spacing: .05em;
   color: #333;
+  text-decoration: none;
 }
 
 .gnav-item a:after {
@@ -163,12 +164,78 @@ img {
   }
 }
 
+#close-1{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: 10px auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
 
-#open-1, #close-1 {
-  cursor: pointer;
+#close-2{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: 10px auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+#close-3{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: 10px auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+#close-4{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: auto auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+#close-5{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: 10px auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+#close-6{
+  background-color: green;
+  border-radius: 0%;
+  color: #fff;
+  width: 10px auto;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+#open-1 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-in;
+}
+
+#close-1 {
   max-width: 100%;
   text-align: center;
 z-index: 1;
+cursor: zoom-out;
 }
 
 #mask-1 {
@@ -179,6 +246,7 @@ z-index: 1;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out;
 }
 
 #modal-1 {
@@ -189,14 +257,21 @@ z-index: 1;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-z-index: 99;
+  z-index: 99;
 }
 
-#open-2, #close-2 {
-  cursor: pointer;
+#open-2 {
   max-width: 100%;
   text-align: center;
   z-index: 1;
+  cursor: zoom-in;
+}
+
+#close-2 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-out;
 }
 
 #mask-2 {
@@ -207,6 +282,7 @@ z-index: 99;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out;
 }
 
 #modal-2 {
@@ -220,12 +296,19 @@ z-index: 99;
 z-index: 99;
 }
 
+#open-3 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-in;
+}
 
-#open-3, #close-3 {
+#close-3 {
   cursor: pointer;
   max-width: 100%;
   text-align: center;
   z-index: 1;
+  cursor: zoom-out;
 }
 
 #mask-3 {
@@ -236,6 +319,7 @@ z-index: 99;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out;
 }
 
 #modal-3 {
@@ -250,11 +334,18 @@ z-index: 99;
 z-index: 99;
 }
 
-#open-4, #close-4 {
-  cursor: pointer;
+#open-4 {
   max-width: 100%;
   text-align: center;
   z-index: 1;
+  cursor: zoom-in;
+}
+
+#close-4 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-out;
 }
 
 #mask-4 {
@@ -265,6 +356,7 @@ z-index: 99;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out;
 }
 
 #modal-4 {
@@ -278,12 +370,18 @@ z-index: 99;
 z-index: 99;
 }
 
-
-#open-5, #close-5 {
-  cursor: pointer;
+#open-5 {
   max-width: 100%;
   text-align: center;
   z-index: 1;
+  cursor: zoom-in;
+}
+
+#close-5 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-out;
 }
 
 #mask-5 {
@@ -294,6 +392,7 @@ z-index: 99;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out;
 }
 
 #modal-5 {
@@ -308,11 +407,18 @@ z-index: 99;
 }
 
 
-#open-6, #close-6 {
-  cursor: pointer;
+#open-6 {
   max-width: 100%;
   text-align: center;
   z-index: 1;
+  cursor: zoom-in;
+}
+
+#close-6 {
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  cursor: zoom-out;
 }
 
 #mask-6 {
@@ -323,6 +429,7 @@ z-index: 99;
   right: 0;
   left: 0;
   z-index: 2;
+  cursor: zoom-out; 
 }
 
 #modal-6 {
@@ -473,6 +580,91 @@ to {
   transform: translateX(0);
 }
 }
+
+.works-img-1 :hover {
+  opacity: .9;
+  animation: rotate-anime .7s linear;
+  cursor: zoom-in;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
+.works-img-2 :hover {
+  opacity: .9;
+  cursor: zoom-in;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
+.works-img-3 :hover {
+  opacity: .9;
+  cursor: zoom-in;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
+.works-img-4 :hover {
+  opacity: .9;
+  cursor: zoom-in;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
+.works-img-5 :hover {
+  opacity: .9;
+  cursor: zoom-in;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
+.works-img-6 :hover {
+  opacity: .9;
+  cursor: zoom-in;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(10deg);}
+    100%  {transform: rotate(0);}
+}
+
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
@@ -480,15 +672,16 @@ to {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 30vw;
   text-align: center;
+  object-fit: cover;
   background-image: url(../img/Em3A3QkVgAEKBgw16081846587923.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .mv-container {
-  padding: 0 40px;
+  padding: 0 10px;
   
 }
 
@@ -503,10 +696,10 @@ to {
 }
 
 .mv-subtitle {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   letter-spacing: .08em;
   color: #fff;
 }
@@ -711,9 +904,6 @@ to {
   color: #797979;
 }
 
-
-
-
 #graydisplay {
   display: none;
   position: fixed;
@@ -856,6 +1046,71 @@ to {
     display: none;
   }
 
+  #open-1, #close-1 {
+    width: 400px;
+    height: 200px 200px;
+  }
+  #modal-1 {
+    max-width: 80%;
+    max-height: 120%;
+    padding: 10px;
+  } 
+
+  #open-2, #close-2 {
+    width: 400px;
+    height: 200px 200px;
+  }
+  #modal-2 {
+    background: #fff;
+    max-width: 80%;
+    max-height: 120%;
+    padding: 10px;
+  }
+    #open-3, #close-3 {
+    width: 400px;
+    height: 200px 200px;
+  } 
+  #modal-3 {
+    background: #fff;
+    max-width: 80%;
+   max-height: 120%;
+    padding: 10px;
+  }
+
+    #open-4, #close-4 {
+    width: 400px;
+    height: 200px 200px;
+  }
+  #modal-4 {
+    background: #fff;
+    max-width: 80%;
+    max-height: 120%;
+    padding: 10px;
+  }
+  
+  #open-5, #close-5 {
+    width: 400px;
+    height: 200px 200px;
+  }
+  #modal-5 {
+    background: #fff;
+    max-width: 80%;
+    max-height: 120%;
+    padding: 10px;
+  }
+  
+  #open-6, #close-6 {
+    width: 400px;
+    height: 200px 200px;
+  }
+  
+  #modal-6 {
+    background: #fff;
+    max-width: 80%;
+    max-height: 120%;
+    padding: 10px;
+  }
+
   /*  メインビジュアル */
   .mv {
     height: 100vh;
@@ -912,18 +1167,6 @@ to {
     width: 100%;
     height: 100%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* Skill */
   .skill-list {
@@ -991,9 +1234,8 @@ to {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
-  }
+  } 
 }
-
 
 .effect-fade {
   opacity: 0;
