@@ -146,24 +146,6 @@ img {
   width: 100%;
 }
 
-.title {
-  opacity: 0;
-  animation-name: fadein-top;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-@keyframes fadein-top {
-  0% {
-     opacity: 0;
-     transform: translateY(-50px);
-  }
-  100% {
-     opacity: 1;
-     transform: translateY(0);
-  }
-}
-
 #close-1{
   background-color: green;
   border-radius: 0%;
@@ -582,7 +564,7 @@ to {
 }
 
 .works-img-1 :hover {
-  opacity: .9;
+  opacity: .3;
   animation: rotate-anime .7s linear;
   cursor: zoom-in;
   animation-fill-mode: forwards;
@@ -596,7 +578,7 @@ to {
 }
 
 .works-img-2 :hover {
-  opacity: .9;
+  opacity: .3;
   cursor: zoom-in;
   animation: rotate-anime .7s linear;
   animation-fill-mode: forwards;
@@ -610,7 +592,7 @@ to {
 }
 
 .works-img-3 :hover {
-  opacity: .9;
+  opacity: .3;
   cursor: zoom-in;
   animation: rotate-anime .7s linear;
   animation-fill-mode: forwards;
@@ -624,7 +606,7 @@ to {
 }
 
 .works-img-4 :hover {
-  opacity: .9;
+  opacity: .3;
   cursor: zoom-in;
   animation: rotate-anime .7s linear;
   animation-fill-mode: forwards;
@@ -638,7 +620,7 @@ to {
 }
 
 .works-img-5 :hover {
-  opacity: .9;
+  opacity: .3;
   cursor: zoom-in;
   animation: rotate-anime .7s linear;
   animation-fill-mode: forwards;
@@ -652,7 +634,7 @@ to {
 }
 
 .works-img-6 :hover {
-  opacity: .9;
+  opacity: .3;
   cursor: zoom-in;
   animation: rotate-anime .7s linear;
   animation-fill-mode: forwards;
@@ -663,6 +645,14 @@ to {
     50%{transform: rotate(0);}
     75%{transform: rotate(10deg);}
     100%  {transform: rotate(0);}
+}
+
+.works-info:hover{
+  opacity: .3;
+}
+
+.works-name:hover{
+  opacity: .3;
 }
 
 /*--------------------------------
@@ -708,6 +698,7 @@ to {
   font-size: 16px;
   line-height: 1.8;
   color: #fff;
+  font-weight: bold;
 }
 
 .mv {
@@ -842,10 +833,10 @@ to {
 .profile-img {
   width: 20%;
   margin-right: 30px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .profile-img img {
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .profile-body {
   flex: 1;
