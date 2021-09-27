@@ -152,6 +152,81 @@ mask.addEventListener('click', () => {
 });
 }
 
+'use strict'
+{
+
+const open = document.getElementById('open-7')
+const close = document.getElementById('close-7')
+const modal = document.getElementById('modal-7')
+const mask = document.getElementById('mask-7')
+
+open.addEventListener('click', () => {
+  modal.classList.remove('hidden-7');
+  mask.classList.remove('hidden-7');
+});
+
+close.addEventListener('click', () => {
+  modal.classList.add('hidden-7');
+  mask.classList.add('hidden-7');
+});
+
+mask.addEventListener('click', () => {
+  // modal.classList.add('hidden');
+  // mask.classList.add('hidden');
+  close.click();
+});
+}
+
+'use strict'
+{
+
+const open = document.getElementById('open-8')
+const close = document.getElementById('close-8')
+const modal = document.getElementById('modal-8')
+const mask = document.getElementById('mask-8')
+
+open.addEventListener('click', () => {
+  modal.classList.remove('hidden-8');
+  mask.classList.remove('hidden-8');
+});
+
+close.addEventListener('click', () => {
+  modal.classList.add('hidden-8');
+  mask.classList.add('hidden-8');
+});
+
+mask.addEventListener('click', () => {
+  // modal.classList.add('hidden');
+  // mask.classList.add('hidden');
+  close.click();
+});
+}
+
+'use strict'
+{
+
+const open = document.getElementById('open-9')
+const close = document.getElementById('close-9')
+const modal = document.getElementById('modal-9')
+const mask = document.getElementById('mask-9')
+
+open.addEventListener('click', () => {
+  modal.classList.remove('hidden-9');
+  mask.classList.remove('hidden-9');
+});
+
+close.addEventListener('click', () => {
+  modal.classList.add('hidden-9');
+  mask.classList.add('hidden-9');
+});
+
+mask.addEventListener('click', () => {
+  // modal.classList.add('hidden');
+  // mask.classList.add('hidden');
+  close.click();
+});
+}
+
 $(function () {
 
   //ページ内スクロール
