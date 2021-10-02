@@ -839,6 +839,10 @@ to {
     100%  {transform: rotate(0);}
 }
 
+.works-info{
+  font-weight: bold;
+}
+
 .works-info:hover{
   opacity: .6;
 }
@@ -967,11 +971,12 @@ to {
 
 .works-name {
   font-size: 12px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 8px;
 }
 
 .works-info {
+  font-weight: normal;
   font-size: 10px;
   margin-top: 5px;
 }
@@ -1006,11 +1011,13 @@ to {
 
 .skill-name {
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .skill-text {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
+  /* font-weight: bold; */
 }
 
 /*--------------------------------
@@ -1023,8 +1030,8 @@ to {
   margin: 0 auto;
 }
 .profile-img {
-  width: 20%;
-  margin-right: 30px;
+  width: 40%;
+  margin-right: 70px;
   border-radius: 10%;
 }
 .profile-img img {
@@ -1032,6 +1039,7 @@ to {
 }
 .profile-body {
   flex: 1;
+  margin-left: 50px;
 }
 
 .profile-body p {
@@ -1054,8 +1062,16 @@ to {
   margin-right: 10px;
 }
 
+.lead{
+  margin-bottom: 10px;
+}
+
 .contact-text {
   margin-top: 10px;
+}
+
+.contact-item p{
+  margin: 30px auto;
 }
 /*--------------------------------
  ページトップ
