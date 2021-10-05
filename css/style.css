@@ -66,6 +66,8 @@ img {
   text-align: center;
   letter-spacing: .05em;
   color: #333;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #000;
 }
 
 .lead {
@@ -1005,6 +1007,19 @@ to {
   margin-right: 20px;
 }
 
+/* .skill-img:hover {
+  opacity: .9;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-40deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(40deg);}
+    100%  {transform: rotate(0);}
+} */
+
 .skill-body {
   flex: 1;
 }
@@ -1019,6 +1034,19 @@ to {
   line-height: 1.8;
   /* font-weight: bold; */
 }
+
+/* .skill-text:hover {
+  opacity: .9;
+  animation: rotate-anime .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    25% {transform: rotate(-5deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(5deg);}
+    100%  {transform: rotate(0);}
+} */
 
 /*--------------------------------
  About
@@ -1064,6 +1092,7 @@ to {
 
 .lead{
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .contact-text {
@@ -1072,6 +1101,7 @@ to {
 
 .contact-item p{
   margin: 30px auto;
+  font-size: 20px;
 }
 /*--------------------------------
  ページトップ
