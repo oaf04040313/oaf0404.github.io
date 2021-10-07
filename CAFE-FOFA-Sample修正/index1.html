@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOFA CAFE|トップページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- ヘッダー -->
+    <header>
+		<!-- PC版ヘッダーメニュー -->
+        <ul class="NavMenu-PC">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="#access">ACCESS</a></li>
+        </ul>
+	<!-- SP版ヘッダーメニュー部分 -->
+        <nav class="NavMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#access">ACCESS</a></li>
+            </ul>
+        </nav>
+        <!-- ハンバーガーメニューの三本線 -->
+        <div class="Toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+	<!-- メインビジュアル -->
+    <section class="main_visual">
+        <div>
+            <img src="images/logo.svg" alt="">
+            <h1>CAFE FOFA</h1>
+            <p class="main_visual_copy">美味しいドリンクとスイーツでひとときを</p>
+        </div>
+
+    </section>
+	<!-- ニュース -->
+    <article>
+        <h2>NEWS</h2>
+        <section class="news">
+            <ul>
+                <li>
+                    <a href="#"><img src="images/news_img1.jpg" alt="">
+                        <p><span class="date">12/25</span><span class="news_title">年末年始の営業時間のお知らせ</span></p>
+                        <p> 12月28日から1月4日までお休みです。新年は1月5日より通常営業いたします。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/news_img2.jpg" alt="">
+                        <p><span class="date">12/20</span><span class="news_title">クリスマスケーキご予約について</span> クリスマスケーキのご予約を始めました。詳しくはこちらをご覧ください。
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/news_img3.jpg" alt="">
+                        <p><span class="date">11/01</span><span class="news_title">カフェ始めました</span> 店内でお好きなスイーツと可愛いドリンクを楽しめるようになりました。
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+<!-- アクセス -->
+        <aside>
+            <h2 id="access">ACCESS</h2>
+            <div class="access_wrap">
+                <section class="access">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.472389289864!2d135.49771375076577!3d34.668025280346896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e713a7ebdf75%3A0x145f873735b2481d!2z44CSNTQyLTAwNzYg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy66Zuj5rOi77yS5LiB55uu77yR4oiS77yS!5e0!3m2!1sja!2sjp!4v1611871683124!5m2!1sja!2sjp"
+                            width="392" height="256" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="access-info">
+                        <table>
+                            <tr>
+                                <th class="valign" rowspan="4">ADDRESS</th>
+                                <td>〒542-0076</td>
+                            </tr>
+                            <tr>
+                                <td>大阪府大阪市中央区難波２丁目１-２</td>
+                            </tr>
+                            <tr>
+                                <td>最寄駅：地下鉄御堂筋線 なんば駅25番出口すぐ</td>
+                            </tr>
+                            <tr>
+                                <td>地下鉄鶴見緑地線 心斎橋駅 徒歩10分</td>
+                            </tr>
+                            <tr>
+                                <th>TEL</th>
+                                <td>06-0000-0000</td>
+                            </tr>
+                            <tr>
+                                <th>OPEN/CLOSE</th>
+                                <td>11:30〜翌日5：00（L.O.4:00）</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </aside>
+    </article>
+
+	<!-- フッター -->
+    <footer>
+        <p>Copyright &copy;2020 CAFE FOFA Inc. All Rights Reserved.</p>
+    </footer>
+
+    <!-- jQuery-トグルボタンが押されたときに、クラスを付与 -->
+    <script type="text/javascript">
+        $(function() {　
+            $('.Toggle').click(function() {　　
+                $(this).toggleClass('active');
+
+                　
+                if ($(this).hasClass('active')) {　　
+                    $('.NavMenu').addClass('active');　 //クラスを付与
+                    　
+                } else {　　
+                    $('.NavMenu').removeClass('active'); //クラスを外す
+                    　
+                }　
+            });
+        });
+    </script>
+
+</body>
+
+</html>

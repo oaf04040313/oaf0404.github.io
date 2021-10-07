@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE FOFA|SITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+           <ul class="header-item">
+                    <li><a rel="home.html">HOME</a></li>
+                    <li><a rel="menu2.html">MENU</a></li>
+                    <li> <a rel="shop.html">SHOP</a></li>
+                    <li> <a rel="access.html">ACCESS</a></li>
+         </ul>
+
+        </nav>
+    </header>
+
+
+        <section class="main-visual">
+    
+
+            <div class="main-visual-item">
+                <div class="image-item">
+                    <img src="images/logo.svg">
+                </div>   
+                    <div class="top-top">
+                        <h1 class="animate__animated animate__bounce">CAFE FOFA</h1>
+                        <p>美味しいドリンクとスイーツでひとときを</p>
+                  </div>
+        </div>
+            
+        </section>
+
+    <article>
+        <h2>NEWS</h2>
+
+        <section class="news">
+            
+            <ul>
+                <div class="news-image1">
+                    <li><a href="#">
+                        <img src="images/news_img1.jpg" alt="">
+                    </a>
+                    <div class="news-font1">
+
+                        <h3>12/25</h3>
+                        <p class="font-color1">年末年始の営業時間のお知らせ</p>
+                    </div>
+                        <h4>12月28日から1月4日までお休みです。
+                            新年は1月5日より通常営業いたします。</h4>
+                        </li>
+                </div>
+                <div class="news-image2">
+                <li><a href="#">
+                    <img src="images/news_img2.jpg" alt="">
+                </a>
+                <div class="news-font2">
+
+                <h3>12/20</h3>
+                <p class="font-color2">クリスマスケーキご予約について</p>
+                </div>
+                <h4>クリスマスのご予約を始めました。
+                    詳しくはこちらをご覧ください。</h4>
+                </li>
+                </div>
+                <li><a href="#">
+                    <img src="images/news_img3.jpg" alt="">
+                </a>
+                <div class="news-font3">
+
+                <h3>11/01</h3>
+                <p class="font-color3">カフェ始めました</p>
+                </div>
+                <h4>店内でお好きなスイーツと可愛いドリンクを楽しめるようになりました。</h4>
+            </li>
+        </ul>
+
+    </section>
+
+    </article>
+
+    <aside>
+
+        <h2 id="access">ACCESS</h2>
+        <div class="access_wrap">
+
+            <section class="access">
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.472389289864!2d135.49771375076577!3d34.668025280346896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e713a7ebdf75%3A0x145f873735b2481d!2z44CSNTQyLTAwNzYg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy66Zuj5rOi77yS5LiB55uu77yR4oiS77yS!5e0!3m2!1sja!2sjp!4v1611871683124!5m2!1sja!2sjp"></iframe>
+                </div>
+
+                <div class="table">
+                    <div class="map-map-1">
+
+                        <h4 class="map-maps1">ADDRESS</h4>
+                        <p class="map-maps-1">大阪府大阪市中央区難波22丁目<br>
+                            最寄駅：地下鉄御堂筋線 なんば駅25番出口すぐ<br>
+                            地下鉄鶴見緑地線 心斎橋駅 徒歩10分
+                        </p>
+                    </div>
+
+                    <div class="map-map-2">
+
+                        <h4 class="map-maps2">TEL</h4>
+                        <p class="map-maps-2"> 06-0000-0000
+                        </p>
+                    </div>
+                    <div class="map-map-3">
+
+                        <h4 class="map-maps3">OPEN/CLOSE</h4>
+                        <p class="map-maps-3"> 11:30~翌日5:00(L.O.4:00)
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </aside>
+
+    <footer>
+        <small>Copyright &copy;2021 CAFE FOFA Inc. AII Rights Reserved.</small>
+
+    </footer>
+    <script type="text/javascript">
+        $(function() {
+            $('.Toggle').click(function() {
+                $(this).toggleClass('active');
+
+                
+                if ($(this).hasClass('active')) {
+                    $('.NavMenu').addClass('active');  //クラスを付与
+                    
+                } else {
+                    $('.NavMenu').removeClass('active'); //クラスを外す
+                    
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

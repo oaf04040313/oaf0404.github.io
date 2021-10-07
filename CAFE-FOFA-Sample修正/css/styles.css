@@ -1,0 +1,530 @@
+@charset "UTF-8";
+
+/* common */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+html {
+    background-color: #DC143c;
+}
+
+body{
+    background-color: #fff;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+/* ヘッダー */
+
+header{
+    background-color: #DC143c;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+header ul {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 16px;
+   text-align: center;
+   width: 40%;
+   margin: 0 auto;
+}
+
+header li{
+    color:#fff;
+    list-style-type: none;
+}
+
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+
+
+/* メインビジュアル */
+
+/* jpg拡張子無し修正 */
+.main_visual {
+    margin-bottom: 32px;
+    padding-top: 48px;
+}
+
+.main_visual div{
+    height: 100vh;
+    max-height: 448px;
+    background-image: url(../images/top_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+h2{
+    color: #DC143c;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.main_visual p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main_visual img{
+    width: 104px;
+}
+
+
+/* メイン */
+
+.news ul {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto 32px auto;
+}
+
+.news li{
+    list-style: none;
+    border: 1px solid #333;
+    padding: 5px;
+    width: 304px;
+    height: 296px;
+}
+
+.news img{
+    margin-bottom: 5px;
+}
+
+.news li:hover{
+    opacity: 0.6;
+}
+
+.date{
+    display: inline-block;
+    color: #fff;
+    background-color: #DC143c;
+    border-radius: 8px;
+    width: 48px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.news_title{
+    color: #DC143c;
+}
+
+.news p{
+    font-size: 15px;
+}
+
+/* aside */
+
+
+.access_wrap{
+ display: flex;
+ align-items: center;
+ background-color: #ededed;
+ height: 312px;
+}
+
+.access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.access th{
+    margin-right: 30px;
+}
+
+.valign{
+    vertical-align: top;
+}
+
+.map img{
+    height: 256px;
+}
+
+.table{
+    border-collapse: separate;
+    border-spacing: 16px 8px;
+}
+
+
+/* footer */
+footer{
+    font-size: 12px;
+    height: 32px;
+    background-color: #DC143c;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+}
+
+ 
+/* nav */
+nav.NavMenu {
+    position: fixed;
+    /*表示位置を固定*/
+    z-index: 2;
+    /*重ね順を変更*/
+    top: 0;
+    /*表示位置を指定*/
+    left: 0;
+    /*表示位置を指定*/
+    background: #fff;
+    /*背景を白にする*/
+    color: #000;
+    /*文字色を黒にする*/
+    text-align: center;
+    /*テキストを中央揃え*/
+    width: 100%;
+    /*全幅表示*/
+    transform: translateX(100%);
+    /*ナビを右に隠す*/
+    transition: all 0.6s;
+    /*アニメーションの時間を指定*/
+}
+
+nav.NavMenu ul {
+    display: flex;
+    flex-direction: column;
+    background: #ff6685;
+    /*背景をグレーにする*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav.NavMenu ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav.NavMenu ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    /*最後のメニュー項目のみ下線を消す*/
+}
+
+nav.NavMenu ul li a {
+    display: block;
+    /*クリックできる領域を広げる*/
+    color: #ffffff;
+    padding: 1em 0;
+}
+/*トグルボタンが押されたときに付与するクラス*/
+
+nav.NavMenu.active {
+    transform: translateY(0%);
+}
+/*トグルボタンのスタイルを指定*/
+
+.Toggle {
+    display: none;
+    position: fixed;
+    /* bodyに対しての絶対位置指定 */
+    right: 10px;
+    top: 5px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #ffffff;
+    -webkit-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .35s ease-in-out;
+    /*変化の速度を指定*/
+    left: 6px;
+}
+
+.Toggle span:nth-child(1) {
+    top: 9px;
+}
+
+.Toggle span:nth-child(2) {
+    top: 18px;
+}
+
+.Toggle span:nth-child(3) {
+    top: 27px;
+}
+/* 最初のspanをマイナス45度に */
+
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/* 2番目と3番目のspanを45度に */
+
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* メニューを開いたままウインドウを広げた場合のボタン固定 */
+
+.Toggle.active {
+    display: block;
+}
+/* グーグルマップ読み込み */
+
+.map {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 30px;
+    height: 0;
+    width: 45%;
+    overflow: hidden;
+}
+
+.map iframe,
+.map object,
+.map embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* menu */
+
+.menu-wrapper{
+    width: 100%;
+    padding-top: 48px;
+}
+
+.menu-wrapper h2{
+    margin: 80px 0 40px 0;
+}
+
+.menu{ 
+     max-width: 960px;
+    margin: 0 auto; 
+ }
+
+ .menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+ 
+.menu li{
+    list-style: none;
+    border: 1px solid #333;
+    margin-bottom: 80px;
+    padding: 5px;
+    width: 440px;
+}
+
+.menu li:nth-of-type(odd){
+    margin-right: 80px;
+}
+
+.menu img{
+    width: 100%;
+}
+
+.menu-name {
+    font-size: 24px;
+    color: #dc143c;
+    margin: 16px 0 8px 0;
+}
+    .menu-text {
+        font-size: 16px;
+    }
+
+    .menu-price {
+        font-size: 20px;
+        color: #dc143c;
+        margin: 8px 0 8px 0;
+    }
+
+
+/*  モバイル用 */
+
+@media (max-width: 959px){
+
+header ul{
+    width: 100%;
+}
+
+h1{
+    font-size: 10vw;   
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.main_visual p{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.main_visual img{
+    width: 80px;
+}
+
+article {
+ width: 100%;
+}
+
+.news{
+    padding: 0 10px;
+}
+
+.news ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 32px auto;
+}
+
+.news li{
+    width: 100%;
+    height: auto;
+    margin: 0 0 5% 0px;
+}
+
+.news img{
+    width: 100%;
+}
+
+.access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.map{
+    width: 100%;
+    margin-bottom: 50%;
+}
+
+.access-info {
+    margin-top: 32px;
+}
+
+.map img{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.access_wrap{
+    height: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+        /* MENUページmax-width: 959pxここから */
+        .menu-wrapper {
+            padding: 48px 10px 0 10px
+        }
+        .menu ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .menu li {
+            margin-bottom: 5%;
+        }
+        .menu li:nth-of-type(odd) {
+            margin-right: 0;
+        }
+        /* SHOPページmax-width: 959pxここから */
+        .shop {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .shop-wrapper h1 {
+            font-size: 10vw;
+            letter-spacing: 5px;
+            margin-bottom: 5px;
+        }
+        .shop-copy {
+            font-size: 2.5vw;
+            font-weight: bold;
+        }
+        .shop-text p {
+            font-size: 14px;
+        }
+        .shop-wrapper {
+            padding: 48px 10px 0 10px;
+        }
+        .shop-slider {
+            margin-bottom: 15%;
+        }
+        .shop-logo {
+            margin-bottom: 10%;
+        }
+    }
+
+
+ @media (max-width: 414px) {
+    .Toggle {
+        display: block;
+    }
+    .NavMenu-PC {
+        display: none;
+    } 
+}
+
+/* menu */

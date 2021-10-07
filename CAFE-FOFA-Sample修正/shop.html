@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOFA CAFE|メニューページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <ul class="NavMenu-PC">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="index.html#access">ACCESS</a></li>
+        </ul>
+
+        <nav class="NavMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="index.html#access">ACCESS</a></li>
+            </ul>
+        </nav>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="Toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <div class="shop-wrapper">
+        <h2>SHOP</h2>
+        <section class="shop">
+
+            <div class="shop-slider">
+                <ul class="slider">
+                    <li><img src="images/shop_img1.jpg" alt="SHOPイメージ1" /></li>
+                    <li><img src="images/shop_img2.jpg" alt="SHOPイメージ2" /></li>
+                    <li><img src="images/shop_img3.jpg" alt="SHOPイメージ3" /></li>
+                </ul>
+            </div>
+
+            <div class="shop-logo">
+                <img src="images/logo-black.svg" alt="">
+                <h1>CAFE FOFA</h1>
+                <p class="shop-copy">美味しいドリンクとスイーツでひとときを</p>
+            </div>
+
+            <div class="shop-text">
+                <p>FOFAとはポルトガル語で「可愛い」という意味です。<br> 誰もがくつろげる、お洒落で可愛いカフェでありたい。
+                    <br> CAFE FOFAには、様々な想いから生まれた工夫が詰まっています。 <br> 例えば、漆喰をモチーフにした壁、天井の木材、レンガも本物を使っているからこそ実現できる、
+                    <br> お客様におくつろぎ頂ける柔らかい空間。 安定感のあるちょっと大きめで温かみのある色彩の椅子、<br> 職人さんが心を込めて作ったオーダーメイドテーブルなど、店内の調度品にもこだわっています。
+                    <br> メニューは、身体に優しい季節の食材を使ったオーガニックフードやスイーツ、
+                    <br> ドリンクをバラエテイー豊かに多数取り揃えております。
+                    <br> 忙しい皆様の毎日にCAFE FOFAでくつろぎのひと時をお過ごしください。</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright &copy;2020 CAFE FOFA Inc. All Rights Reserved.</p>
+    </footer>
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            /*自動再生：true＝ON falseOFF*/
+            autoplaySpeed: 3000,
+            /*自動速度*/
+            fade: true,
+            /*フェードイン・アウト：true＝ON falseOFF*/
+            dots: true,
+            /*インジケーター表示：true＝ON falseOFF*/
+            arrows: false,
+            /*矢印表示：true＝ON falseOFF*/
+        });
+    </script>
+</body>
+
+
+</html>
