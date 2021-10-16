@@ -985,7 +985,9 @@ to {
   margin-top: 5px;
 }
 
-/* website */
+/* ----------------------- */
+/* -------- website -------*/
+/* ----------------------- */
 
 .web-site{
   display: flex;
@@ -999,7 +1001,7 @@ to {
 }
 
 .web-flex a:hover{
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .web-flex img{
@@ -1007,18 +1009,25 @@ to {
   margin-bottom: 15px;
 }
 
+.web-flex img:hover{
+  animation: scale .7s linear;
+  animation-fill-mode: forwards;
+}
+  @keyframes scale {
+    0%  {transform: scale(1);}
+    100%  {transform: scale(1.3);}
+}
+
 .web-name{
   text-align: center;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
-
 }
 
 .web-name2{
   text-align: center;
   font-size: 12px;
-
 }
 
 /*--------------------------------
@@ -1045,18 +1054,17 @@ to {
   margin-right: 20px;
 }
 
-/* .skill-img:hover {
-  opacity: .9;
-  animation: rotate-anime .7s linear;
-  animation-fill-mode: forwards;
+.skill-img{
+  animation: rotate 2.5s step-start infinite;
+  animation-timing-function: in;
 }
-  @keyframes rotate-anime {
+  @keyframes rotate {
     0%  {transform: rotate(0);}
-    25% {transform: rotate(-40deg);}
+    25%  {transform: rotate(10deg);}
     50%{transform: rotate(0);}
-    75%{transform: rotate(40deg);}
+    75%{transform: rotate(-10deg);}
     100%  {transform: rotate(0);}
-} */
+}
 
 .skill-body {
   flex: 1;
@@ -1072,19 +1080,6 @@ to {
   line-height: 1.8;
   /* font-weight: bold; */
 }
-
-/* .skill-text:hover {
-  opacity: .9;
-  animation: rotate-anime .7s linear;
-  animation-fill-mode: forwards;
-}
-  @keyframes rotate-anime {
-    0%  {transform: rotate(0);}
-    25% {transform: rotate(-5deg);}
-    50%{transform: rotate(0);}
-    75%{transform: rotate(5deg);}
-    100%  {transform: rotate(0);}
-} */
 
 /*--------------------------------
  About
