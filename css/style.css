@@ -1010,7 +1010,7 @@ to {
 }
 
 .web-flex img:hover{
-  animation: scale .7s linear;
+  animation: scale .3s linear;
   animation-fill-mode: forwards;
 }
   @keyframes scale {
